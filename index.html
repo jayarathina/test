@@ -23,13 +23,18 @@
 <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		<script type="text/javascript">
 
+		function resizeHead() {
+			$('#banner').css('height', window.innerHeight+'px');
+		}
 
-			$(document).ready( function() {
-			   $('#more1').click(function(e) {
-			       e.preventDefault();
-			       $('html, body').animate({scrollTop:$("#one").offset().top}, 500);
-			   });
-			});
+		$(document).ready( function() {
+			resizeHead();
+		
+		   $('#more1').click(function(e) {
+			   e.preventDefault();
+			   $('html, body').animate({scrollTop:$("#one").offset().top}, 500);
+		   });
+		});
 		
 		</script>
 		
