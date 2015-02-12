@@ -21,16 +21,18 @@
 <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		<script type="text/javascript">
 
+		
+
 		function resizeHead() {
+
 			$('#banner').css('height', window.innerHeight+'px');
 		}
 
 		$(document).ready( function() {
 			resizeHead();
-		
-		   $('#more1').click(function(e) {
-			   e.preventDefault();
-			   $('html, body').animate({scrollTop:$("#one").offset().top}, 500);
+			$('#more1').click(function(e) {
+		       e.preventDefault();
+		       $('html, body').animate({scrollTop:$("#one").offset().top}, 500);
 		   });
 		});
 		
@@ -46,6 +48,9 @@
 		<nav id="nav">
 			<ul>
 				<li><a href="index.php">முகப்பு</a></li>
+				<li><a href="http://localhost/e/auser/">விவிலிய நூல் அட்டவணை</a></li>
+				<li><a href="generic.html">புகுபதிகை</a></li>
+				<li><a href="elements.html">Elements</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -119,12 +124,12 @@
 						<section class="feature 6u 12u$(small)">
 							<img class="image fit" src="images/time.jpg" alt="" />
 							<h3 class="title">ஒரு மணி நேரம்</h3>
-							<p>உங்களின் நேரத்தில் ஒரு மணி நேரம் செலவிட்டு இத்திட்டத்தில் பங்கேற்க வேண்டுகின்றேன்.
+							<p>உங்களின் நேரத்தில் ஒரு மணி நேரம் செலவிட்டு இத்திட்டத்தில் ஒரு அதிகாரத்தையேனும்  திருத்த வேண்டுகின்றேன்.
 							</p>
 						</section>
 						<section class="feature 6u$ 12u$(small)">
 							<img class="image fit" src="images/broswer.jpg" alt="" />
-							<h3 class="title">Eveniet, reiciendis, veniam</h3>
+							<h3 class="title">இணையம் + உளாவி</h3>
 							<p>இணைய வசதியும் ஏதேனும் ஒரு <a href='https://whatbrowser.org/'>நவீன  உளாவியும்</a> தேவை</p>
 						</section>
 					</div>
@@ -175,11 +180,6 @@
 				</ul>
 			</section>
 		</div>
-		<ul class="copyright">
-			<li>&copy; Untitled. All rights reserved.</li>
-			<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
-			<li>Images: <a href="http://unsplash.com">Unsplash</a></li>
-		</ul>
 	</div>
 </footer>
 	</body>
