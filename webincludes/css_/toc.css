@@ -1,0 +1,23 @@
+@charset "UTF-8";
+.num {
+	text-align: right;
+	display: inline-block;
+	width: 30px;
+	margin: 7px 0px;
+}
+
+td.subtitle, th  {
+	text-align: center !important;
+	font-size: x-large !important;
+}
+
+th {
+
+	font-weight: bold !important;
+	
+}
+
+tr td:first-child{
+    width:1%;
+    white-space:nowrap;
+}
