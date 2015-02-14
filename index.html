@@ -24,7 +24,9 @@ initSettings('webincludes');
 </script>
 		<script type="text/javascript">
 			$(document).ready( function() {
-				$('#banner').css('height', window.innerHeight+'px');
+				if(window.innerHeight > 478 ){//minimum highe required to make 'more' within banner
+					$('#banner').css('height', window.innerHeight+'px');
+				}
 				$('#more1').click(function(e) {
 			       e.preventDefault();
 			       $('html, body').animate({scrollTop:$("#one").offset().top}, 500);
