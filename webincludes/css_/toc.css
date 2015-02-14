@@ -1,8 +1,12 @@
 @charset "UTF-8";
 
 h4 a{
-	color: #4DAC71;
-	text-decoration: underline;
+	color: #4DAC71 !important;
+	text-decoration: underline !important;
+}
+
+h4 a:hover {
+    text-decoration: none !important;
 }
 
 header {
