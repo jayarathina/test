@@ -6,8 +6,7 @@
 }
 
 .para {
-	text-indent: 1.5em;
-	-moz-hyphens: auto;
+	text-indent: 15%; /* Was previously 2.5em */
 	text-align: justify;
 }
 
@@ -29,6 +28,7 @@
 
 .indent {
 	margin-left: 2em;
+	margin-left: 8%;
 	display: block;
 	text-indent: 0;
 }
@@ -37,12 +37,30 @@
 	text-indent: -2em;
 	display: block;
 	margin-left: 6em;
+	text-align: left;
 }
 
 .poem>.verseNum {
 	position: absolute;
 	margin-left: -1em;
 	line-height: inherit;
+}
+
+@media (min-width: 0px) and (max-width: 520px) {
+	.indent {
+		margin-left: 8%;
+	}
+
+	.poem {
+		margin-left: 2em;
+	}
+	
+	.poem>.verseNum {
+		position: absolute;
+		margin-left: 2em;
+		line-height: 16px;
+	}
+  
 }
 
 /*
